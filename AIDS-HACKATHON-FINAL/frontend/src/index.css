@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 90%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 90%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 270 100% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 180 100% 45%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 80%;
+    --sidebar-primary: 180 100% 45%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 80%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 180 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-accent/10 selection:text-accent;
+  }
+
+  body {
+    @apply bg-deep-black text-light-gray antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glass-morphism {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)];
+  }
+  
+  .neo-blur {
+    @apply backdrop-blur-2xl bg-black/40 border border-white/10;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-electric-blue via-white to-deep-purple bg-clip-text text-transparent;
+  }
+  
+  .button-gradient {
+    @apply bg-gradient-to-r from-electric-blue to-deep-purple hover:from-deep-purple hover:to-electric-blue transition-all duration-500;
+  }
+  
+  .shadow-glow {
+    @apply shadow-[0_0_15px_rgba(0,255,255,0.3)];
+  }
+  
+  .shadow-glow-intense {
+    @apply shadow-[0_0_25px_rgba(0,255,255,0.5)];
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  
+  .animation-delay-1500 {
+    animation-delay: 1500ms;
+  }
+  
+  .glassmorphic-panel {
+    @apply backdrop-blur-xl bg-black/30 border border-white/10 rounded-2xl;
+  }
+  
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:-z-10 before:p-[1px] before:rounded-[inherit] before:bg-gradient-to-r before:from-electric-blue before:to-deep-purple;
+  }
+  
+  .glow-ring {
+    @apply relative before:absolute before:-inset-1 before:-z-10 before:rounded-[inherit] before:bg-gradient-to-r before:from-electric-blue/50 before:to-deep-purple/50 before:blur-md;
+  }
+  
+  .parallax-tilt {
+    @apply transition-transform duration-300 ease-out hover:scale-[1.02];
+  }
+  
+  .neon-border {
+    @apply border border-electric-blue/50 shadow-[0_0_10px_rgba(0,255,255,0.3),inset_0_0_10px_rgba(0,255,255,0.2)];
+  }
+}

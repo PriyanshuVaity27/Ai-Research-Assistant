@@ -1,0 +1,1178 @@
+
+=== Page 1 ===
+Vol.:(0123456789)
+ Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+Discover Electronics
+Perspective
+Future prospects of 6G wireless communication: review of antenna 
+technologies
+Ameelia Roseline A1 · Pranav Mohan Kumar2
+Received: 29 July 2024 / Accepted: 12 December 2024
+© The Author(s) 2024 
+ 
+OPEN
+Abstract
+The sixth generation (6G) wireless technology is designed for advanced applications such as immersive reality, autono-
+mous vehicle communication, and holographic communication. Central to 6G systems are RF transceivers, including 
+amplifiers, mixers, and antennas. For 6G to support higher data rates and ensure network reliability in higher frequency 
+bands, antennas need to be simple in design, cost-effective for mass production, and have better radiation performance 
+than 5G antennas. This paper provides a brief review of recent advancements in 6G antenna design, covering deploy-
+ment scenarios, design methodologies, and radiation characteristics, aiming to enhance readers’ understanding of 6G 
+antenna architectures.
+Keywords  6G wireless technology · Antenna applications · MIMO antenna · Extended virtual reality
+1  Introduction
+Early in the 2030s is when sixth generation (6G) wireless technology is anticipated to become a reality. [1, 2].To 
+make this technology a reality, engineers, governments, international bodies are actively investing in research to 
+make this promise a reality. Although the 6G technology is built on the foundation of fifth generation (5G) and 5G 
+advanced, 6G technology is expected to provide a higher spectral efficiency, very low latency, optimal AI (Artificial 
+Intelligence) and ML (Machine Learning) connectivity, and higher data coverage than 5G. Some notable applications 
+include extended virtual reality (XR), digital twins, and holographic communications. Essentially, it is anticipated that 
+6G technology would close the gap between the digital and real worlds. To support these applications, you need 
+enabling technologies such as Reconfigurable Intelligent Surfaces (RIS), AI, Non-Terrestrial Networks (NTNs), ultra 
+massive MIMO and more. The main challenge for WPT is the sharp decline in energy transfer efficiency with distance 
+due to considerable route loss. Researchers have examined MIMO systems, especially massive MIMO, and energy 
+beamforming algorithms for their ability to direct highly directed RF signal power onto user equipment (UEs) in order 
+to address this problem [3–6]. Fading may have a substantial influence on wearable device-to-wearer communication 
+in practical wireless propagation circumstances, especially where wireless communication is essential for military 
+operations team coordination, mission control, and situational awareness [7]. It is now simple and quick to design 
+microstrip filters using a Transmission Line model (TL) and Genetic Algorithm (GA). To demonstrate the effective-
+ness of the recommended approach, a wideband second-order bandpass filter with a center frequency of 2.3 GHz 
+ *  Ameelia Roseline A, ameeliaroseline@gmail.com; Pranav Mohan Kumar, pranavus94@gmail.com | 1Department of Electronics 
+and Communication Engineering, Panimalar Engineering College, Chennai, Tamilnadu, India. 2The Math Works Inc., 1 Lakeside Campus 
+Drive, Natick MA‑01760, USA.
+
+=== Page 2 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+is tested using two short-circuited and two open-circuited stubs [8]. In recent years, off-chip DRA designs, such as 
+small and in-substrate DRAs, have become more and more popular. The reason behind this increase in demand is 
+the swift advancement of economical methods for producing multilayer laminates, like Low-Temperature Co-fired 
+Ceramic (LTCC) and Printed Circuit Boards (PCBs) [9]. Regardless of the application 6G supports, RF (Radio Frequency) 
+transceivers are inevitable part of a 6G architecture. A generic RF MIMO (Multiple-Input Multiple-Output) transceiver 
+is shown in the Fig. 1. This generic RF MIMO transceiver architecture included a phase shifter at its transmitter and 
+its receiver. This is because to accurately capture the transmitted signal, phase shifts are necessary to align the array 
+beam with the direction from which the received signal arrives [10]. It should be noted that the input to the RF 
+transmitter and the output from the RF receiver are not depicted in Fig. 1, as the main emphasis of this review paper 
+is on antenna designs rather than RF transceiver architectures.
+This paper focusses on a review of the around 50 most promising 6G antenna architectures, a key component 
+of RF transceivers. This paper also highlights the key characteristics of these antenna architectures and how it can 
+be a considered a promising candidate for 6G applications. The 6G antenna architectures are sorted based on their 
+operating frequencies: mid- and high-frequency band antennas. Mid-frequency band 6G antennas operate between 
+1–100 GHz and high-frequency band 6G antennas operate above 100 GHz. This paper also provides antenna overview 
+tables that highlights key characteristics of the antennas that are discussed in this review paper. The antennas are 
+reviewed or succinctly summarized based on increasing order of resonant frequencies.
+The remainder of the work is structured in this manner. In each of the sections 2 and 3, which provide a brief 
+summary of the features and performance of each design, a brief discussion of the relative benefits and drawbacks 
+of each antenna type as well as comparisons with the results of current technologies would give readers a more 
+nuanced understanding of their practical implications. Section 2 summarizes the key characteristics of mid-frequency 
+6G antennas, while Section 3 summarizes the key characteristics of high-frequency 6G antennas as documented in 
+recent publications. The developed results in this review work can be studied in a number of ways; these are briefly 
+described in Section 4 as potential future directions. Finally, we conclude the paper in Section 5.
+Table 1 in section 2 and Table 2 in section 3 offers a comprehensive overview of the essential features of mid-
+frequency and high frequency 6G antennas as outlined in recent scholarly publications respectively. Specifically, it 
+presents a concise summary of 50 diverse antenna designs, detailing their operating frequencies and highlighting key 
+characteristics. The tables also include important specifications such as bandwidth, gain, aperture efficiency, and ­S11, 
+which are critical for evaluating antenna performance. Table 3 in section 3 summarizes the fabrication technology, 
+advantages, disadvantages, applications, and challenges of a few previous works. Table 4 in section 4 summarizes the 
+various implementation methods and technologies for a few contemporary 6G wireless communication networks. By 
+compiling this information in a single, easy-to-navigate format, Table 1, 2, 3 & 4 serves as a valuable quick reference 
+for researchers. It enables them to efficiently compare and contrast the fundamental aspects of different antenna 
+designs, facilitating informed decision-making in the exploration and development of 6G antenna technologies. This 
+structured presentation of data not only saves time but also helps in identifying the most suitable antenna configura-
+tions for specific applications or research needs.
+Fig. 1   Generic RF MIMO Transceiver
+
+=== Page 3 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+Table 1   Summary of the key characteristics of mid-frequency 6G antennas
+Ref # Antenna type
+Resonant frequency
+Key characteristics
+Antenna specifications
+Simulated using
+[11]
+8-Port MIMO antenna module
+6.425 GHz
+• Compact
+• High spectral efficiency (56 bps/Hz)
+• FR4 Substrate
+• Mobile telecommunication
+Bandwidth = 6.425–7.125 GHz
+Ansys HFSS full wave EM simulator
+[12]
+4-port MIMO antenna module
+7.025 GHz
+• Compact
+• High spectral efficiency (56 bps/Hz)
+• FR4 Substrate
+• Mobile telecommunication
+Bandwidth = 7.025–8.4 GHz
+Ansys HFSS full wave EM simulator
+[19]
+Planar lens antenna
+10 GHz and 10.4 GHz • Capacitive and Inductive features on 
+a single layer
+• X-band applications
+• Rogers 4350 substrate
+• Single layer metasurface
+Gain = 16.3 dBi at 10 GHz and 13.2 dBi 
+at 10.4 GHz
+Ansys HFSS full wave EM simulator
+[20]
+Glass shaped patch antenna
+10.06 GHz,
+Wi-Fi, and
+19.42 GHz
+• Low-profile
+• Ultra wideband
+• FR4 substrate
+• Wi-Fi, 5G and 6G communications
+• Operating band = 2.69 GHz–
+20.05 GHz
+• Gain = 
+2.2 dB at 10.06 GHz; 3.24 dB and 
+4.23 dB over Wi-Fi bands; 8.17 dB at 
+19.42 GHz
+• S11: − 26.94 dB at 3.76 GHz, 
+− 22.96 dB at 8.89 GHz, − 22.59 dB at 
+11.59 GHz,
+− 22.71 dB at 17.09 GHz, and
+− 24.01 dB at 18.88 GHz
+• VSWR < 2 in the operating bandwidth
+Ansys HFSS full wave EM simulator
+[21]
+64-by-64 slotted stacked patch 
+antenna array
+19.5 and 29.5 GHz
+• Filtennas
+• Light-in-weight
+• Cost-effective
+• RO4003 substrate
+• K/Ka band Satellite mobile communi-
+cation systems
+• Operating band = 17.5 GHz–
+21.5 GHz/27.5 GHz–31.5 GHz
+• Gain = 7.8–9.22 dBi
+ADS &
+Ansys HFSS full wave EM simulator
+[22]
+Sandwiched PRS (partially reflective 
+surface) Fabry–Perot antenna
+25.3 GHz
+• Compact
+• High aperture efficiency
+• RO3010 and RT/Duroid 5880
+• mm-wave
+• Gain = 12.35 dBi at 25.3 GHz
+• Aperture efficiency = 79.4%
+• Cavity height = λ/17
+Ansys HFSS full wave EM simulator
+[23]
+Wearable ring Metal-dielectric and DR 
+antennas
+28 GHz
+And 13.2 GHz
+• Wearable
+• Low-cost
+• Fuse filament fabrications
+• Poly-lactic acid (PLA)/RT-Duroid 5880/ 
+PREPERM® ABS1000
+• 3-D Printing
+• mm-Wave
+BW = 0.6 GHz
+Gain = 6 dB
+S11 = − 22 dB
+CST Micro Wave Studio
+
+=== Page 4 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+Table 1   (continued)
+Ref # Antenna type
+Resonant frequency
+Key characteristics
+Antenna specifications
+Simulated using
+[24]
+Wideband, high-efficiency electromag-
+netic structure
+60 GHz
+• Antenna In package
+• Wideband
+• Common mode suppression
+• Rogers 3003
+• 5G/6G Antenna-in-Package (AiP) 
+applications
+22% impedance band-
+width = 60–75 GHz, Relative 
+Gain = 8–10 dBi
+3-dB beamwidth:
+E-plane: ­50o
+H-plane: ­45o
+Not specified
+[25]
+mm-wave Conical-beam antennas
+76 GHz
+• Conical radiation
+• Compact
+• Highly stable conical beam radiation
+• Duroid 5880 substrate
+• mm-wave, 6G LEO, E-band, V-band
+• Gain = 12.05 dB
+• Operating band = 59.38–89.95 GHz; 
+40.9%
+Not specified
+[26]
+Tooth-shaped patch antenna
+77 GHz
+• Lower mutual coupling effect with 
+higher gain
+• Rogers RO/Duroid 5880
+• mm-wave and Autonomous vehicle
+Gain = 9.4 dB
+Ansys HFSS full wave EM simulator
+
+=== Page 5 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+Table 2   Summary of the key characteristics of high frequency 6G antennas
+Ref #
+Antenna type
+Resonant frequency/frequency 
+range
+Key characteristics
+Antenna specifications
+Simulated using
+[27]
+8-by-8 Antenna array module
+110 GHz
+• Compact
+• Low dielectric loss
+• Sub-THz
+• Gain = 19.65 dBi
+• Bandwidth = 9.19 GHz
+Ansys HFSS full wave EM simulator
+[28]
+SIW slot antenna
+114.25, 134.75, 124, 144, 154, and 
+160 GHz
+• Wideband
+• Six resonant frequencies
+• Rogers Duroid 5880
+• D-band
+Operating Bandwidth = 110–
+170 GHz
+Ansys HFSS full wave EM simulator
+[29]
+Leaky-wave wire antenna
+120 GHz
+• Copper wire and Teflon rod
+• Simple
+• Low cost
+• Easy to fabricate
+• Copper wires twisted around 
+Teflon rod
+• D-band
+• Gain = 9.9 dBi
+• Operating band = 115 to 180 GHz
+CST Microwave
+Studio
+[30]
+Stacked patch 4-by-4 antenna 
+array
+140 GHz
+• Wide bandwidth
+• High gain
+• Economical
+• ASTRA MT77 Substrate
+• Multilayered standard PCB 
+fabrication
+• D-band
+• Gain = 16 dBi
+• Operating band = 123 to 158 GHz
+Ansys HFSS full wave EM simulator
+[31]
+MIMO Antenna array
+150 GHZ
+• Simple
+• Wide band
+• High gain
+• D-band
+• Gain = 18.3 dBi
+• Bandwidth = 142 to 155.5 GHz
+Not specified
+[32]
+multi slot THz microstrip antenna
+217 GHz and 228 GHz
+• Simple
+• Miniaturization
+• Easy to fabricate
+• Silicon substrate
+• Terahertz 6G communication
+• Operating bandwidth = 217 GHz-
+250 GHz
+• Gain = 3.7 dB and 4.5 dB
+Ansys HFSS full wave EM simulator
+[33]
+CP Sub-THz four-layer antenna
+285 GHz
+• Low-profile
+• Circular polarized
+• Four-layer antenna
+• WR-3 waveguide
+• Sub-THz
+• Gain = 11.9 dBic
+• Operating bandwidth = 270–
+295 GHz
+Not specified
+[34]
+CP horn antenna
+300 GHz
+• Circular polarized
+• Compact
+• Electrical discharge machining
+• Brass
+• Wire-cutting EDM
+• Gain = 18.3 dBic
+• 3 dB axial ratio band-
+width = 7 GHz(309 GHz-316 GHz)
+being 2.3% with a minimum axial 
+ratio of 1.15 dB at 312 GHz
+• Total efficiency = 87.5%
+• Radiation efficiency = 99%
+CST Microwave
+Studio
+
+=== Page 6 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+Table 2   (continued)
+Ref #
+Antenna type
+Resonant frequency/frequency 
+range
+Key characteristics
+Antenna specifications
+Simulated using
+[35]
+THz dipole reflector antenna
+310 GHz
+• Half-circle-shaped directors
+• short-range THz communication
+• Compact
+• Benzo-Cyclo-Butene (BCB)
+• Broadband wireless high-data-
+rate communication
+• Gain = 7.27 dBi
+• Operating band = 296–383 GHz
+Ansys HFSS full wave EM simulator
+[36]
+Turnstile antenna
+1 THz
+• Circular polarization
+• Frequency tunable
+• Compact
+• Satcom
+• Gain = 0.5 dBi
+• 30% 3-dB axial ratio bandwidth
+• 69.79% efficiency
+CST Microwave Studio and MATLAB
+[37]
+Vivaldi patch antenna
+0.06125–0.06215 THz
+• Metallic on Rogers RT5880 
+Substrate
+• PCB technology
+• Bandwidth = 80 GHz,
+• Return loss − 58.83 dB
+• VSWR = 1.002
+• Peak gain
+− 11.77 dB
+• Radiation efficiency = 97.40%
+• Directivity = 11.89 dBi
+CST Microwave Studio
+[38]
+Transmit array
+0.12–0.13 THz
+• All-dielectric structure
+• Laser-drilling
+• 10 dB wide Bandwidth = 117 to 
+139 GHz
+• Gain = 32–34 dB,
+• Radiation Efficiency = 95%
+Ansys HFSS full wave EM simulator
+[39]
+Patch Antenna and Antenna Array
+0.135–0.155 THz
+• Megtron 7N substrate
+• PCB technology
+• At 150 GHz, Insertion loss of 
+− 1.9 dB/cm, 1.8 dB/cm for 
+microstrip line and coplanar 
+waveguide respectively
+• Bandwidth-14%
+• Gain = 14 dBi
+Ansys HFSS full wave EM simulator
+[40]
+THz Circularly Polarized Lens 
+Antenna
+0.24–0.32 THz
+• High-temperature resin
+• 3D Printing
+• 1 dB gain bandwidth = 13.3%
+• 3 dB axial ratio band-
+width = 18.8%
+• Directivity = 30.8 dBic
+Ansys HFSS full wave EM simulator
+
+=== Page 7 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+Table 3   Summary of Fabrication Technology, Advantages, Disadvantages, Applications and Challenges of few previous works
+Ref #
+Fabrication technology
+Advantages
+Disadvantages
+Applications
+Challenges
+[37]
+PCB technology
+• Enhanced Radiation Performance
+• Strong gain
+• Directivity
+• Fabrication Challenges
+• Environmental Sensitivity
+• Wireless communica-
+tions
+• Video-rate imaging
+• Spectroscopy
+• Doppler radar
+• Object Imaging
+• Smart City Technologies
+• Material Limitations
+• Heat Dissipation
+• Cross-Talk and Interference
+[24]
+PCB technology
+• Cost-Effective Manufacturing
+• Common-Mode Current Suppression
+• Potential Size Constraints
+• Internet of Things (IoT)
+• Wireless Sensors
+• Automotive Applications
+• Manufacturing Tolerances
+• Material Limitations
+[38]
+Laser-drilling
+• All-Dielectric Structure
+• Zero Back-Scattering
+• Beam forming Capability
+• Complexity in Design
+• Potential Losses in Fabrication
+• Wireless Communications
+• Antenna Beamforming
+• Imaging Systems
+• Cost of Advanced Manufacturing
+• Integration with Existing Systems
+[39]
+PCB technology
+• Wide-Band Performance
+• High Gain
+• Complex Manufacturing
+• Potential for Fabrication Variability
+• Telecommunications
+• Phased Array Systems
+• Radar Systems
+• Thermal Management
+• Cost Management
+[40]
+3D Printing
+• High Gain
+• Broad Bandwidth
+• Circular Polarization
+• Cost-Effective Fabrication
+• Lightweight Design
+• 3-D Printing Constraints
+• Narrow angle of operation
+• Terahertz Communication
+• Satellite Communication
+• Aerospace and Defense
+• Integration with Feed Sources
+• Precision Manufacturing
+[34]
+Wire-cutting EDM
+• High Efficiency
+• Strong Circular Polarization
+• Accurate Fabrication
+• Material Constraints
+• Complex Fabrication Process
+• Wireless Sensing and Monitoring
+• High-Data-Rate transmission
+• Aerospace and Defense
+• Testing Limitations
+• Integration Issues
+
+=== Page 8 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+Table 4   Summary of Various Implementation Methods and Technologies of few recent 6G wireless communication network
+Ref #
+Technology/implementation 
+method
+Algorithms/adapted techniques
+Advantages
+Limitations
+Description
+[46]
+Reconfigurable Intelligent Sur-
+faces
+Blind beamforming
+• Reduced Computational Cost,
+• Statistical Approach,
+• SNR boost of up to 17 dB at 
+2.6 GHz
+• Dependency on Statistical Meas-
+urements
+• Random Phase Shifts
+• Complexity in Implementation
+Enhancement of Multi-IRS Perfor-
+mance with Blind Beamforming 
+without Channel Estimation
+[47]
+Mobile and cell-free user-centric 
+networking
+multiple-carrier division duplex 
+scheme
+• Wired Fronthaul Elimination
+• Efficient Use of THz Bandwidth
+• Dynamic AP Clustering
+• Reducing infrastructure costs
+• Sensitivity to Channel Condi-
+tions
+• Implementation Complexity
+End-to-end performance improve-
+ment using a duplex frame 
+structure utilizing multiple carrier 
+division
+[48]
+Terahertz Sensing and communi-
+cations
+Ray-tracing-statistical hybrid 
+model
+• High Bandwidth Utilization
+• Temporal and Spatial Consist-
+ency Verification
+• Modeling of Path Loss
+• Hybrid Model Proposal
+• Impact of Antenna Configura-
+tion,
+• Scalability Issues
+Measurements of the channels at 
+201–209 GHz in indoor communi-
+cation environments
+[49]
+Ultra massive MIMO
+Three dimensional 6G-non 
+stationary geometry based 
+stochastic model
+• Exploration of Unique Channel 
+Characteristics
+• Development of a Generalized 
+Model
+• Identification of Channel Hard-
+ening effect
+• Sparse Property Findings
+• Challenges with Non-Station-
+arity
+Ultra massive MIMO communica-
+tion systems at the 5.3 GHz band 
+are investigated using a statisti-
+cal model that looks at several 
+antenna array topologies
+[50]
+Al (artificial intelligence)
+Multi-agent reinforcement learn-
+ing
+• Adaptability to Complex Tasks
+• Autonomous Decision-Making
+• Research Opportunities
+• Performance in Uncontrolled 
+Environments
+• Potential Overfitting
+Multi agent reinforcement learning 
+is utilized in the emergent com-
+munication network to integrate 
+autonomous decision making 
+skills
+
+=== Page 9 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+2  Mid‑frequency 6G antenna architectures
+Table 1. Presents a summary of the key characteristics of mid-frequency 6G antennas as documented in recent 
+publications.
+2.1  8‑Port MIMO antenna module
+The antenna discussed in [11] operates within the 6 GHz frequency bands, and it has been shown that using MIMO with 
+eight spatial streams, it can attain a spectral efficiency exceeding 56 bps/Hz. Figure 2 shows the geometry of the 1 × 2 
+module array with two eight-port multiple-input and multiple-output (8PM) antenna modules mounted on a ground 
+plane. (a) Top (b) side view (c) Back view. This antenna is an 8PM antenna module designed to provide eight uncorrelated 
+waves operating in the 6.425–7.125 GHz range using four patch antennas. These patch antennas feature dual polariza-
+tion, and the entire module is designed to be compact, with each antenna element taking up just 0.074λ2 of area. The 
+antenna has been extended to a 1-by-2 8PM configuration and tested to provide up to 10 Gbps data throughput with 
+200 MHz bandwidth, thereby enabling a spectral efficiency (ηs) exceeding 56 bps/Hz. This achieved ηs is thrice than that 
+of a 4-by-4 MIMO for 5G operation at 3.5 GHz. The ports 1–8 of the 8PM antennas are excited to generate eight uncorre-
+lated waves at the desired frequency bands. Port isolation is achieved by adding a shorted disk in the four dual-polarized 
+antennas, which slightly diverts the surface currents. This antenna has been applied to a 16-by-8 MIMO test bed system 
+and measured for its bit error rate, throughput, spectral efficiency, and Signal-to-Noise ratio (SNR). The results obtained 
+from these measurements are summarized in [11].
+2.2  4‑port MIMO antenna module
+6G devices are anticipated to support more MIMO spatial streams than their 5G counterparts. As a result, this antenna 
+is targeted to operate in 7.025–8.4 GHz to achieve larger spectral efficiency. Figure 3 shows geometry of the low-profile 
+four-port MIMO (4PM) antenna module. (a) Top and side views. (b) Perspective view. The antenna [12] is constructed 
+using 4PM antenna modules that forms 16-port closely spaced 2-by-2 module array. Since 16-port structures occupies 
+large device real estate, using 4-port MIMO antenna modules makes the antenna low profile to support eight spatial 
+streams with the ηs of 56 bps/Hz. Simulation of this structure reveals that the antenna resonates at approximately 7.3 
+and 8.3 GHz with a 3:1 VSWR, a common standard for mobile antennas. These results are attributed to the antenna struc-
+ture: four square top sub patches with truncated inner corners are printed on a FR4 substrate, separated by a layer of air.
+Fig. 2   Geometry of the 1 × 2 
+module array with two 8PM 
+antenna modules mounted 
+on a ground plane. a Top b 
+Side view c Back view [11]
+
+=== Page 10 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+2.3  Planar lens antenna for X‑band 6G applications
+High-gain antennas are in demand when it comes to compensate free space path loss in higher operating frequen-
+cies. This is applicable in sensing and massive MIMO systems [13, 14]. Massive MIMO systems can employ EM lens 
+with large antenna array to tap into benefits of energy focussing and spatial interference rejection [15, 16]. The Lens 
+antenna array focus signals into distinct paths i.e. focus energy based on Angle of Arrival (AoA) of signals reducing 
+the need for multiple RF chains [17, 18].
+The contour map of the power of the signals received by various lens array elements for signals coming at (θ, φ) 
+= (0,0) and (0, –15°), respectively, is displayed in Figure 4. The experimental verification confirms that the energy 
+focusing antennas of lens arrays fluctuate with the orientations of the signals when a signal arrives at a different 
+direction (θ, φ) = (0, –15°). These antennas are relocated to those with indices around (3, 4).
+In [19], a novel design is suggested to enhance antenna gain through a single-layer metasurface comprising several 
+circular metal patches combined with rectangular slots. These slots determine polarization of antenna. This paper also 
+compares non-resonant and resonant planar lens antenna designs. The non-resonant planar lens antennas require 
+high permittivity materials which makes fabrication unfeasible. But using metasurfaces, one can design a high gain 
+planar antennas without high permittivity materials. The shape of the planar lens is optimized to achieve an increased 
+gain for a single patch antenna, which rises from 7.2 dBi to 16 dBi at 10 GHz and reaches 12.8 dBi at 10.4 GHz within 
+the X-band spectrum. This eliminates the necessity for an array feeding network, thereby reducing losses generated 
+by feed. These factors contributed to high gain planar structures.
+2.4  Glass shaped patch antenna for UWB and 6G applications
+To provide reliable 6G networks in urban areas, higher data capacity is required, and the frequency of interest that 
+can achieve this desired outcome is centimetric waves. The centimetric wave bands are also referred as mid-band 6G 
+spectrum that pans from 7–20 GHz will be one of the promising frequency bands that can provide a robust coverage 
+in urban areas. The ideal antenna candidate to meet these requirements are patch antennas because they are easy 
+Fig. 3   Geometry of the low-
+profile four-port MIMO (4PM) 
+antenna module. a Top and 
+side views. b Perspective view 
+[12]
+
+=== Page 11 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+to integrate in a PCB [20]. The patch in [20] is form of a glass to enhance the bandwidth. Figure 5 shows (a) Top view 
+and (b) bottom view of the glass shaped antenna.This structure is fed through a microstrip quarter wave transformer 
+for impedance matching purposes. The ground plane is also etched with a semi-circular is etched to further enhance 
+the impedance bandwidth. This configuration provides an UWB antenna that operates between 2.69–20.05 GHz with 
+a fractional bandwidth of 152.68% and a VSWR < 2 for the entire operating frequency band.
+Fig. 4   Contour plot of the received signal power by different elements of the lens array [17]
+Fig. 5   a Top view andb bottom view of the glass shaped antenna [20]
+
+=== Page 12 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+2.5  Slotted stacked patch antenna array for 6G satellite mobile communication systems
+Another antenna candidate discussed in [21] is used to increase the data capacity is active antenna array. The frequency 
+of interest that was chosen is in K/Ka band and this antenna array is targeted to provide beam steering patterns for 6G TX/
+RX satellite mobile communication systems. Figure 6 shows the 3D view of the square-ring patch 8 × 8 sub-antenna. The 
+first step in designing this antenna is to calculate the link budget of a satellite link and determine its gain. The antenna 
+gain has been found to be a minimum of 35 dB. The next step in the active antenna design process is choosing an ideal 
+candidate for antenna element that meet the requirements. The filtering antennas or filtennas are chosen because they 
+do not require additional filtering systems. For an element in the antenna array, a patch antenna that resembles like a 
+stacked square-ring is selected for its filtering capability, simple design, and low cost. The stacked square antenna con-
+sists of two square rings that are stacked on each other to increase the operating bandwidth and decrease the ­Zin. The 
+radiation pattern is notably wide, exhibiting a peak directivity perpendicular to the antenna’s plane and null directions 
+parallel to the ground plane. This element is extended to an 8-by-8 array comprising of 64 elements and this array reso-
+nates at 19.5 GHz and 29.5 GHz with the directivity of 23.3 dBi at 30° scanning. The paper discusses that if 8-by-8 array is 
+extended to 64-by-64 antenna array, then the directivity and gain can be improved.
+2.6  Sandwiched PRS Fabry–Perot antenna
+Since 6G RF architecture demands a compact PCB real estate, the choice Fabry–Perot (FP) antennas come to mind. FP 
+antennas are favored in wireless communications for their high gain characteristics, though this high gain comes at a 
+cost of larger cavity height. Figure 7 shows the (a) Side view of the FP antenna, (b) geometry of the slit radiator. The FP 
+antenna architecture incudes a substrate, Partially Reflective Surfaces (PRS), and one or more superstrates.The distance 
+between substrate and superstrate, cavity height, is expected to be λ/2 for optimal Aperture Efficiency (AE). But with 
+demand of compact RF architecture, the antenna in [22] proposes a novel idea in reducing the cavity height up to λ/17 
+without compromising AE. The lower cavity height is achieved by sandwiching PRS between two superstrates. This aided 
+in reducing the cavity height. The prototype antenna resonates at 25.3 GHz with AE of 79.4% and a gain of 12.35 dBi. Due 
+to these simulated results, it makes a promising 6G antenna candidate.
+2.7  Wearable ring metal‑dielectric and DR antennas
+The demand of light-weight antennas in 6G communications motivated to design antennas that are light-weight and 
+economical to fabricate. Figure 8 shows the Patch antenna integrated into a wearable ring (a) top view, (b) side view .To 
+do this, the paper [23] introduces Fused Filament Fabrication (FFF) to fabricate antennas. FFF uses an in-house machine 
+to fabricate metal-dielectric antennas thus 3-D printing of metal and the substrate layer. This paper uses FFF to fabricate 
+patch antenna that can be integrated to a wearable ring and a Dielectric Resonator Antenna (DRA). The advantages of 
+using this fabrication methodology are to keep the fabrication cost down. The fabricated patch antenna was measured 
+in free space using a hand phantom. This antenna resonated around 28 GHz with 0.6 GHz of impedance bandwidth. This 
+Fig. 6   A 3D view of the 
+square-ring patch 8 × 8 sub-
+antenna [21]
+
+=== Page 13 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+paper also discusses about fabrication of DRA to emphasis the future scope of fabricating future 6G antennas. The DRA 
+resonates at 13.5 GHz and 0.5 GHz impedance bandwidth with the radiation gain above 6 GHz.
+2.8  Wideband Antenna‑in‑Package
+The Antenna-in-Package (AiP) is commonly used in 60 GHz and above applications. The AiP are cost effective and make 
+the antennas compact. This also means that antenna and RF systems share very small physical distance in PCBs, and 
+this produces EM interference. The EM interference is introduced by common mode currents and common mode sup-
+pression techniques in PCBs are very hard to achieve due to small coupling distance, high permittivity of the material, 
+etc., To overcome the challenges, a low-cost antenna AiP antenna is designed in [24] with wideband common-mode 
+chocking characteristics. Figure 9 shows the evolution of the proposed antenna. (a) Wideband, High-Efficiency Electro-
+magnetic Structure (WHEMS) with a back plate and metal backing cavity. (b) Ideal model of the proposed antenna. (c) 
+AiP implementation of the proposed antenna in PCB technology. The antenna is a WHEMS featuring a backing cavity. 
+Within this cavity, an enhanced quarter wave transformer, known as a radiating choke, is embedded. This choke effectively 
+Fig. 7   a Side view of the pro-
+posed structure b geometry 
+of the slit radiator [22]
+Fig. 8   Patch antenna inte-
+grated into a wearable ring: a 
+top view b side view [23]
+
+=== Page 14 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+suppresses both common-mode and radiation currents. The structure demonstrates a 22% impedance bandwidth rang-
+ing from 60-75 GHz, with a gain of 8–10 dBi.
+2.9  mm‑wave conical‑beam antenna
+Another compact antenna is discussed in [25] which is targeted for mm-wave low-earth orbit (LEO) systems. Figure 10 
+shows the Proposed ME CB antenna.This antenna is a conical-beam (CB) antenna that operates in E-band (71–86 GHz). 
+Compared to the existing CB antennas this antenna has a high gain of 12.05 dBi at 76 GHz and wideband planar antenna 
+with an impedance bandwidth of 40.9% (59.38–89.95 GHz). The high-gain and wideband characteristics of this antenna 
+is achieved by the probe excitation of electric and magnetic dipoles. The realization of these electric dipoles takes the 
+shape of two annular rings divided into eight annular sectors. And the magnetic dipoles are realized by five vias that 
+are drilled into each annular sector. But this single layer structure has a constraint on the feeding design and imposed 
+a limit on the number of elements. This resulted in poor conical radiation. To generate a good conical radiation a multi-
+stage circular-cavity substrate integrated waveguide structure is designed and that helped to control the ­TM010/TM020 
+resonant modes.
+2.10  Tooth‑shaped antenna
+The 76–81 GHz frequency band is used for Autonomous Vehicle Applications (AVA) and the RADAR (Radio Detection 
+and Ranging) systems that are designed to aid the AVA applications to understand the surrounding environments. To do 
+this, these applications require high gain antennas with a broad field view and a narrow beam in azimuth and elevation 
+direction. Figure 11 shows the Tooth-shaped patch antenna. The paper [26] compares a conventional insert-fed patch 
+antenna and how its performance can be improved by using eight equally spaced tooth-shaped slots and two slots at 
+the lower edge of the antenna. Because of its true input admittance, the tooth-shaped antenna design makes it ideal for 
+use in both Long-Range Radar (LRR) and Short-Range Radar (SRR) applications. It resonates at 77 GHz, offering a gain 
+Fig. 9   Evolution of the proposed antenna. a WHEMS with a back plate and metal backing cavity. b Ideal model of the proposed antenna. c 
+AiP implementation of the proposed antenna in PCB technology [24]
+Fig. 10   Proposed ME CB 
+antenna [25]
+
+=== Page 15 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+of 9.4 dB and a current distribution of 1.36 × 103 A/m. At this resonant frequency, the antenna’s return loss is simulated 
+at − 37.9441 dB.
+3  High‑frequency band 6G antennas
+Table 2 presents a summary of the key characteristics of high frequency 6G antennas as documented in recent 
+publications.
+3.1  110 GHz antenna array module using AiP
+Sub-Terahertz (Sub-THz) frequencies are one of the promising frequency bands in 6G communications. This is primary 
+because we can optimize our systems for high data rate. Due to the small wavelength in Sub-THz frequencies, AiPs are 
+best suited to realize antenna array module. In this paper [27], a 110 GHz antenna array module was realized in AiP. At 
+Sub-THz, AiP radiation performance will vary because most System-in-Package (SiP) fabrication processes have been 
+designed for packaging low frequency RF systems. Conventional SIP architectures employs even substrates in total: A 
+core substrate with thicker thickness for mechanical support and this core substrate is stacked with three thinner sub-
+strates top and bottom of the core substrate with prepreg materials. Figure 12 shows the Stacked dielectric substrates to 
+design the Sub-THz AiP. In this paper, two AiP architectures are discussed: In this first architecture, a thicker core is used. 
+The thickness of the first AiP with all the layers is 850 µm. This includes ground and metal planes with metal via-pad and 
+anti-pad. For the second architecture, a thinner core is used, and it brings down the thickness to 400 µm. In the metal 
+layer, a rectangular metal patch radiator is placed. While simulating it is observed that the AiP with the thinner thickness 
+produce larger bandwidth of 6.6 GHz at 110 GHz resonant frequency. When the antenna is extended to 2-by-2, 4-by-2, 
+Fig. 11   Tooth-shaped patch 
+antenna [26]
+Fig. 12   Stacked dielectric 
+substrates to design the Sub-
+THz AiP [27]
+
+=== Page 16 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+4-by-4, 4-by-4, 8-by-4, and 8-by-8, it is observed that the bandwidth and gain increased. For 8-by-8, the AiP exhibits a 
+19.65 dBi gain and 9.19 GHz bandwidth.
+3.2  Substrate integrated waveguide (SIW) based slot antenna
+This paper [28] also proposes a D-band (110–170 GHz) antenna that aims to provide higher data rates. The antenna is 
+chosen to be a wideband PCB based SIW slot antenna designed. To support higher order modes, a wide cavity is selected. 
+Figure 13 shows the Proposed antenna with WR6-SIW transition. The antenna architecture comprises of top and bottom 
+metal layers, and they are joined to create SIW line and cavity. The two layers communicates with arrays of vias, and their 
+dimensions are optimized to ensure that the radiation loss is less than or equal to − 0.06 dB throughout the D-band. The 
+top metal layer is etched with a rectangular slot to support the antenna performance. Upon simulation, the antenna 
+resonates at six different frequencies in the D-band. The modes supported by this structure are ­TE310 at 114.2 GHz and 
+­TE210 at 134.75 GHz. The other four resonance frequencies, identified at 124 GHz, 144 GHz, 154 GHz, and 160 GHz, result 
+from hybrid modes. The first two are created by the merging of ­TE310–TE120 and ­TE120–TE220 modes, respectively, while 
+the last two originate from the combination of ­TE220–TE320 modes.
+3.3  Leaky wave wire antenna
+The antenna in [29] is a leaky wave wire antenna which is also another D-band antenna that operates at 120 GHz with a 
+simulated gain of 9.9 dBi. Figure 14 shows the Leaky Wave Antenna. The design of the antenna features four metal wires 
+wrapped around a Teflon rod, with each wire being twisted at a rate of 520°. This antenna architecture is simple and 
+does not require tedious fabrication process. However, this paper does not cover feeding mechanisms for exciting this 
+antenna, as designing and selecting optimal feeding mechanisms for these architectures poses significant challenges. 
+If properly excited, this architecture can be used for 6G communications.
+3.4  Stacked patch 4‑by‑4 antenna array
+The antenna in [30] is a stacked patch 4-by-4 antenna array that was built to target data-intensive 6G applications includ-
+ing driver-less vehicles, extended reality, and broadband plus. To support 100 GB/s application, the antenna must sup-
+port at least of 25 GHz bandwidth. Figure 15 shows the D-band stacked patch antenna design. (a) PCB stack-up (CORE: 
+Fig. 13   Antenna with WR6-
+SIW transition [28]
+Fig. 14   Leaky Wave Antenna 
+[29]
+
+=== Page 17 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+core substrate. PP: prepreg). (b) Exploded view. (c) Top view and physical parameters of antenna structure. The proposed 
+design consists of six conductor layers. In these six layers, the ground plane, microstrip feeding network, top and bot-
+tom patches can be found. Two ground layers with no connection are placed between the top and bottom patches to 
+construct via barriers. Surface waves between each antenna element are suppressed as a result. Upon simulating a single 
+antenna element, the structure yielded the 40 GHz bandwidth and 6.9 dBi gain. This structure is extended to 4-by-4 planar 
+array and measured to find the resonance is at 140 GHz featuring a 35 GHz bandwidth that spans from 123–158 GHz, 
+along with a gain of 17.5 dBi.
+3.5  MIMO D‑band antenna array
+The antenna described in [31] is another promising candidate for 6G communication. Figure 16 shows the geometry 
+of the low profile antenna (a) top view (b) metric view. The antenna consists of 8-by-8 antenna arrays that provides a 
+Fig.15   D-band stacked patch 
+antenna design. a PCB stack-
+up (CORE: core substrate. PP: 
+prepreg). b Exploded view. c 
+Top view and physical param-
+eters of antenna structure [30]
+Fig. 16   Geometry of the low profile antenna a top view b metric view [31]
+
+=== Page 18 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+gain of 18.3 dB and a bandwidth of 17 GHz from 142-155.5 GHz with 150 GHz being resonant frequency. The design 
+process involves first constructing 1-by-8 MIMO patch array and each element of this patch array is cascaded using 
+series feed. After constructing 1-by-8 array, an 8-by-8 array is formed with 8 elements of 1-by-8 array. The 8-by-8 
+array is connected using a 50 Ω 1-to-8 Wilkinson power divider. By connecting the antenna in this configuration, the 
+antenna provided a wider bandwidth which will allow this antenna to transmit signals at higher data rates.
+3.6  Symmetrical multi slot THz microstrip antenna
+The antenna described in [32] features a silicon substrate with a butterfly-shaped radiation arm that is symmetrical 
+from left to right, and it utilizes a lumped port for excitation. Figure 17 shows the Antenna 3 and specific structure 
+of “loop” patch. The antenna is constructed in multiple iterations to improve the performance and support 6G com-
+munication requirements. In the first iteration, the antenna resembles a traditional bow tie with slots. In addition to 
+this, a circular and semi-circular patch was etched at the symmetry and two ends of the radiation arms, respectively. 
+The antenna upon simulation reveals that it resonates at 228 GHz and 243 GHz with the 31.4 GHz operating band-
+width and 7.44 dB gain. To further improve the performance, in the second iteration, a vertical rectangular slot is 
+cut into the center of the structure. This improved the current distribution, operating bandwidth, and gain. In the 
+third iteration, a circular groove was added to the left and right of the central symmetry of the antenna. This moved 
+the resonant frequency to 217 GHz and 228 GHz with gain of 3.7 dB and 4.5 dB, relatively. The inclusion of a circular 
+groove expanded the operating bandwidth to 33 GHz, resulting in a relative bandwidth for the structure of 41.25%.
+Fig. 17   Antenna 3 and specific 
+structure of “loop” patch [32]
+
+=== Page 19 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+3.7  Circularly polarized Sub‑THz four‑layer antenna
+The antenna designed in [33] operates in sub-THz frequency region to combat high atmospheric attenuation, and to 
+support high data rates and large bandwidths. However, in sub-THz band, using a relatively thick substrate produces 
+surface waves and this in turn will result in narrower bandwidth antennas. To avoid this issue, the antenna is designed 
+using brass and it is Circularly Polarized (CP). Figure 18 shows the Exploded view of the antenna.The antenna consists 
+of four layers: radiating window, an excitation layer, an air cavity, and a coupling layer. The radiation characteristics is 
+like of an Air-filled Channelized Coplanar Waveguide (ACCPW) and a 300 GHz WR-3 waveguide is used to center feed 
+the structure. The antenna offers a 12 GHz axial ratio bandwidth from 278.2–290.2 GHz, within an 8.9% impedance 
+bandwidth from 270-295 GHz and boasts a gain of 11.9 dBic and 95.1% efficiency. Its compact size of 2.25λ -by- 2.25λ 
+-by- 0.5λ at 285 GHz makes it ideal for next generation sub-THz 6G applications.
+3.8  Circularly polarized horn antenna
+Another CP antenna for 6G applications were discussed in [34], but this is a horn antenna. Figure 19 shows the 3-D 
+exploded view of the antenna.This horn antenna is fabricated using the wire Electrical Discharge Machining (EDM) 
+method. Designed for operation at 300 GHz, the antenna features a WR-03 rectangular waveguide feed, a circular 
+polarizer disk, and a conical horn. The circular polarizer is made up of crossed slots of unequal lengths, which are 
+Fig. 18   Exploded view of the 
+antenna [33]
+Fig. 19   A 3-D exploded view 
+of the antenna [34]
+
+=== Page 20 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+perpendicular to each other. Adjusting the lengths of these slots allows for the observation of the Circular Polariza-
+tion (CP) radiation pattern. The antenna provides a 20% impedance bandwidth, ranging from 270 GHz to 330 GHz, 
+with a reflection coefficient of ≤ − 15 dB. Additionally, it offers a 7 GHz axial ratio bandwidth between 309-316 GHz, 
+achieving a minimum axial ratio of 1.15 dB at 312 GHz.
+3.9  THz dipole reflector antenna
+6G wireless communication is expected to operate in THz to provide higher data rate compared to 5G and other older 
+communication standards [4]. One of the promising antenna candidate is proposed in [35]. The antenna is simple dipole 
+with reflectors and directors that operates between 295–400 GHz with 33.8% impedance bandwidth. Figure 20 shows 
+the Top view of the single element with a reflector .The antenna resonates at 310 GHz and uses indium phosphide and 
+benzo-cyclo-butene as substrates. Gold is used to construct dipole, reflector, and half-circle shaped directors. The overall 
+gain through simulation is observed to be 7.27 dBi. Although the proposed antenna features a simple design, the selec-
+tion of materials for its substrates and conducting layer renders it both costly and specialized.
+3.10  6G Turnstile antenna
+The study [36] explores a 1 THz graphene-based turnstile or crossed-dipole patch antenna, chosen for graphene’s superior 
+properties over copper in conductivity, tensile strength, and current density at THz frequencies, making it ideal for THz 
+6G antennas. Graphene also enables Transverse Magnetic Surface Plasmon Polariton (TM SPP) waves. Figure 21 shows 
+the Graphene THz Turnstile Antenna. Constructed from two graphene dipoles on an epoxy and silica substrate, electro-
+magnetic simulations show the antenna supports circular polarization with a 30% 3 dB axial ratio bandwidth, 0.454 dBi 
+gain, and 69.79% efficiency. However, its low gain raises questions about its effectiveness for 6G communication.
+4  Future direction
+Future trends in 6G antenna designs are focused on meeting the demands of ultra-fast data rates, low-latency commu-
+nication, and enhanced energy efficiency [41, 42]. Here are some key trends:
+Fig. 20   Top view of the single 
+element with a reflector [35]
+
+=== Page 21 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+4.1  Terahertz (THz) antenna design
+Massive bandwidth is available at THz frequencies, which are operated over 100 GHz using 6G antennas [43]. These 
+extremely high frequencies will require antenna designs to be capable of handling smaller, high-gain antennas that 
+can overcome the propagation issues associated with THz signals. Research is being done on materials like graphene 
+and metamaterials to enable a small and effective THz antenna.
+4.2  Reconfigurable intelligent surfaces (RIS)
+RIS is a method used to modify radio waves without the need of sophisticated signal processing algorithms or active 
+power amplifiers [44]. Real-time wireless signal reflection and refraction on passive, tunable surfaces will be possible 
+thanks to RIS technology. Because RIS-based antenna designs eliminate the need for high-power transmitters, 6G 
+networks will use less energy and be more environmentally friendly.
+4.3  Beamforming and beam steering enhancements
+6G antenna systems will use AI and machine learning to automatically adjust beamforming. As a result, antennas will 
+be able to automatically modify beam direction and power levels in response to network conditions, user location, 
+and mobility patterns.
+In order to reduce interference and improve the signal-to-noise ratio (SNR) for more dependable communication, 
+antenna arrays use beamforming to focus signals into particular places. While digital beamforming uses digital signal 
+processing (DSP) to alter amplitude and phase, analog beamforming uses phase shifters to modify the phase of each 
+antenna element. Performance and complexity can be balanced by combining the two approaches[45].In millimeter-
+wavelength communications, huge antenna arrays are typically installed at the transmitter and/or receiver to pro-
+duce massive beamforming gains in order to offset the significant route loss. For millimeter-wave communications, 
+EM-lens enabled MIMO can be used to significantly enhance beamforming performance while lowering hardware 
+and signal processing expenses [17].
+4.4  Miniaturization and integration
+Future antennas may incorporate flexible, conformal designs for better integration with devices like smartphones, 
+wearables, and even clothing, offering greater flexibility in product design while maintaining high performance.
+In summary, 6G antenna designs will focus on ultra-high frequency operation, intelligent beamforming, and integra-
+tion with smart surfaces, all while enhancing energy efficiency and supporting next-generation wireless applications.
+Fig. 21   Graphene THz Turn-
+stile Antenna [36]
+
+=== Page 22 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+5  Conclusion
+In conclusion, this review has detailed around 50 different 6G antenna architectures, spanning mid- (1–100 GHz) and 
+high-frequency (above 100 GHz) bands, providing a broad overview of their capabilities and designs. Through antenna 
+overview tables, we’ve highlighted the key features of each antenna, arranging them by their resonant frequencies for 
+easy comparison. This paper offers a clear snapshot of the current advancements and future prospects in 6G antenna 
+technology, emphasizing the evolving challenges and innovations in the field of 6G wireless communication.
+Acknowledgements  The authors acknowledge Panimalar Engineering College, Chennai, India for providing excellent support to this review 
+article.
+Author contributions  Ameelia Roseline A, supervised the overall progress of the research, offering guidance and expertise in refining the study 
+design, addressing methodological challenges and Final Approval. Pranav Mohan Kumar, played a key role in the initial conceptualization of 
+the research, contributing valuable ideas and insights that shaped the study’s direction. All authors were primarily responsible for drafting 
+sections of the manuscript and critically reviewed and edited the manuscript, providing constructive feedback and ensuring the coherence 
+and accuracy of the content.
+Funding  Not applicable.
+Data availability  No datasets were generated or analysed during the current study.
+Declarations 
+Ethics approval and consent to participate  Not applicable.
+Competing interests  The authors declare no competing interests.
+Open Access   This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which 
+permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to 
+the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You 
+do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party 
+material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If 
+material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds 
+the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://​creat​iveco​
+mmons.​org/​licen​ses/​by-​nc-​nd/4.​0/.
+References
+	 1.	 Dhinesh Kumar M, Suresh C. Shift to 6G: Exploration on trends, vision, requirements, technologies, research, and standardization efforts. 
+Sustain Energy Technol Assess. 2022;54:102666. https://​doi.​org/​10.​1016/j.​seta.​2022.​102666.
+	 2.	 Shafi M, Jha RK, Jain S. 6G: technology evolution in future wireless networks. IEEE Access. 2024;12:57548–73. https://​doi.​org/​10.​1109/​
+ACCESS.​2024.​33852​30.
+	 3.	 Hua TD, Mohammadi M, Ngo HQ, Matthaiou M. Cell-free massive MIMO SWIPT with beyond diagonal reconfigurable intelligent surfaces. 
+arXiv preprint arXiv. 2024. https://​doi.​org/​10.​48550/​arXiv.​2402.​00646.
+	 4.	 Mohammadi M, Tran LN, Mobini Z, Ngo HQ, Matthaiou M. Cell-free massive MIMO and SWIPT: access point operation mode selection and 
+power control. GLOBECOM. 2023. https://​doi.​org/​10.​1109/​GLOBE​COM54​140.​2023.​10437​956.
+	 5.	 Dikmen O. Pilot assignment for cell free massive MIMO systems: a successive interference cancellation approach. Duzce Univ J Sci Technol. 
+2024;12(3):1739–51. https://​doi.​org/​10.​29130/​dubit​ed.​14484​94.
+	 6.	 Dikmen O. Performance analysis and simulation of IRS-aided wireless networks communication. Symmetry. 2024;16(2):254. https://​doi.​
+org/​10.​3390/​sym16​020254.
+	 7.	 Mukherjee T, Pati B, Panigrahi CR, Bebortta S. Performance modeling of composite fading channels: an application to wearable wireless 
+communication systems. Discov Electron. 2024. https://​doi.​org/​10.​1007/​s44291-​024-​00020-3.
+	 8.	 Singh A, Ritika, Jangid A. A fast and effective approach for microstrip filter design using GA and TL—model. Discov Electron. 2024. https://​
+doi.​org/​10.​1007/​s44291-​024-​00007-0.
+	 9.	 Zhang Y, Ogurtsov S, Vasilev V, Kishk AA, Caratelli D. Advanced dielectric resonator antenna technology for 5G and 6G applications. Sen-
+sors. 2024;24(5):1413.
+	10.	 MathWorks documentation for RF Blockset, R2024a. https://​www.​mathw​orks.​com/​help/​simrf/​index.​html.
+	11.	 Wong KL, Hong SE, Tseng YS, Li WY. Low-profile compact 8-Port MIMO antenna module and Its 1 × 2 Array for 6G 16 × 8 device MIMO 
+application. IEEE Access. 2023;11:137011–24.
+
+=== Page 23 ===
+Vol.:(0123456789)
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y 
+	
+Perspective
+	12.	 Wong KL, Hong SE, Li WY. Low-profile four-port MIMO antenna module based 16-port closely-spaced 2 × 2 module array for 6G upper 
+mid-band mobile devices. IEEE Access. 2023;11:110796–808.
+	13.	 Shaikh SA, Tonello AM. DoA estimation in EM lens assisted massive antenna system using subsets based antenna selection and high 
+resolution algorithms. Radio Engin. 2018;27(1):159–68. https://​doi.​org/​10.​13164/​re.​2018.​0159.
+	14.	 Shaikh SA, Tonello AM. Radio source localization in multipath channels using EM lens assisted massive antennas arrays. IEEE Access. 
+2019;7:9001–12. https://​doi.​org/​10.​1109/​ACCESS.​2019.​28911​10.
+	15.	 Zeng Y, Zhang R, Chen ZN. Electromagnetic lens-focusing antenna enabled massive MIMO: performance improvement and cost reduc-
+tion. IEEE J Sel Areas Commun. 2014;32(6):1194–206. https://​doi.​org/​10.​1109/​JSAC.​2014.​23281​51.
+	16.	 Shaikh SA. What you should know about next generation 6g mobile technology. Int J Interact Mob Technol. 2022;16(24):191–203. https://​
+doi.​org/​10.​3991/​ijim.​v16i24.​35335.
+	17.	 Zeng Y, Zhang R. Cost-effective millimeter-wave communications with lens antenna array. IEEE Wirel Commun. 2017;24(4):81–7. https://​
+doi.​org/​10.​1109/​MWC.​2017.​16003​36.
+	18.	 Shaikh MA, Shaikh SA, Shaikh FZ. Location based services for remote education and health institutes using sum-difference signal patterns. 
+Int J Interact Mob Technol. 2022;16(22):4–14. https://​doi.​org/​10.​3991/​ijim.​v16i22.​35337.
+	19.	 Ramzan M, Sen P. (2022) Dual-band gain-boosted planar lens antenna using a single layer metasurface for 6G applications. Joint European 
+conference on networks and communications & 6G summit (EuCNC/6G summit), Grenoble, France.446–450. https://​www.​barkh​ausen​
+insti​tut.​org/​filea​dmin/​user_​upload/​Publi​katio​nen/​2022/​6GSum​mit_​MetaA​ntenna_​2022.​pdf.
+	20.	 Hyasat YM, Faouri YS. (2022) A glass shaped with circular slot patch antenna for UWB applications and potential 6G wireless communica-
+tions. 4th IEEE middle east and north Africa COMMunications conference (MENACOMM), Amman, Jordan.106–110. https://​ieeex​plore.​
+ieee.​org/​docum​ent/​99981​94.
+	21.	 Dastkhosh AR, Naseh M, Lin F. (2021) K/Ka Slotted stacked patch antenna and active array antenna design for a 5G/6G satellite mobile 
+communication system. 13th global symposium on millimeter-waves & terahertz (GSMM), Nanjing, China. 1–3. https://​ieeex​plore.​ieee.​
+org/​docum​ent/​95119​95.
+	22.	 Chandran PBM, Zheng B, An S, Tang H, Li H, Zhang H. (2018). Sandwiched PRS fabry-perot structure for achieving compactness and 
+improved aperture efficiency. IEEE international symposium on antennas and propagation & USNC/URSI national radio science meeting, 
+Boston, MA, US. 2018: 2043–2044. https://​ieeex​plore.​ieee.​org/​docum​ent/​86086​52
+	23.	 S. Li, P. Njogu, B. S. Izquierdo, S. Gao and Z. Chen. 3D Printing Antennas for 5G and Millimeter Wave 6G Applications. IEEE 33rd Annual 
+International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC), Kyoto, Japan. 2022; p.1–5. https://​ieeex​plore.​
+ieee.​org/​docum​ent/​99780​07.
+	24.	 L. Chi, Z. Weng, Y. Qi and J. L. Drewniak. A 60 GHz PCB Wideband Antenna-in-Package for 5G/6G Applications. IEEE Antennas and Wireless 
+Propagation Letters.2020; 19 (11): 1968–72. https://​ieeex​plore.​ieee.​org/​docum​ent/​91333​05.
+	25.	 D. A. Pham and S. Lim. Millimeter-Wave Complementary Planar Antenna with Conical Radiation for 6G Applications. IEEE International 
+Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (USNC-URSI), Portland, OR, USA. 2023; 1397–1398. 
+https://​ieeex​plore.​ieee.​org/​docum​ent/​10238​128.
+	26.	 Foysal F, Mahmud S, Baki AKM. A novel and high gain antenna design for autonomous vehicles of 6G wireless systems. International 
+conference on green energy, computing and sustainable technology (GECOST), Miri, Malaysia. 2021; 1–5. https://​ieeex​plore.​ieee.​org/​
+docum​ent/​95387​02.
+	27.	 Wu KH, Chou HT, Lin DB. (2021) Realization of an 110GHz antenna array module by using AiP technologies for potential 6G applications. 
+International symposium on antennas and propagation (ISAP), Taipei, Taiwan. 1–2. https://​ieeex​plore.​ieee.​org/​docum​ent/​96143​63.
+	28.	 Altaf A, Abbas W, Seo M. A wideband SIW-based slot antenna for D-band applications. IEEE Antennas Wirel Propag Lett. 
+2021;20(10):1868–72.
+	29.	 Sohoo AA, Sohu IA, Seman FC, Ishak NS, Khee YS. Leaky-wave wires antenna for future D- Band 6G communication systems. IEEE inter-
+national symposium on antennas and propagation (ISAP), Kuala Lumpur, Malaysia. 2023. https://​ieeex​plore.​ieee.​org/​docum​ent/​10389​
+162.
+	30.	 Dao T, Kearns A, Reyes Paredes D, Hueber G. Wideband high-gain stacked patch antenna array on standard PCB for D-band 6G commu-
+nications. IEEE Antennas Wirel Propag Lett. 2024;23(2):478–82.
+	31.	 Hamad HBi, Hrizi H, Ghnimi S, Latrach L, Gharsallah A. (2023) innovative antenna design for advanced 6G technology. 22nd Mediterranean 
+microwave symposium (MMS), Sousse, Tunisia. 1–5. https://​ieeex​plore.​ieee.​org/​docum​ent/​10421​039.
+	32.	 Xu W, Zhang D, Ding, Juan Y, Bian B , Chen CP . (2021) Symmetrical multi slot terahertz 6G communication application band antenna 
+based on butterfly like structure. International conference on microwave and millimeter wave technology (ICMMT), Nanjing, Chinapp. 
+1–3. https://​ieeex​plore.​ieee.​org/​docum​ent/​96181​80.
+	33.	 Kumar S. Kumar S. (2023) A circularly polarized Sub-THz antenna for 6G wireless communication. IEEE microwaves, antennas, and propa-
+gation conference (MAPCON), Ahmedabad, India. 1–5. https://​ieeex​plore.​ieee.​org/​docum​ent/​95253​77.
+	34.	 Aqlan B, Himdi M, Le Coq L, Vettikalladi H. Sub-THz circularly polarized horn antenna using wire electrical discharge machining for 6G 
+wireless communications. IEEE Access. 2020;8:117245–52.
+	35.	 Vadlamudi R, Kumar DS. (2023) Design of a THz antenna with broadband radiation characteristics for 6G applications. IEEE wireless antenna 
+and microwave symposium (WAMS), Ahmedabad, India. 1–4. https://​ieeex​plore.​ieee.​org/​docum​ent/​10242​972.
+	36.	 Sharma A, Vishwakarma KD. (2022) Graphene based turnstile antenna for terahertz (6G) applications. URSI regional conference on radio 
+science (URSI-RCRS 2022, IIT Indore. 1–5. https://​www.​ursi.​org/​proce​edings/​2022/​RCRS2​022/​papers/​SPCSh​armaA​mit.​pdf.
+	37.	 Kushwaha RK, Karuppanan P. Design and analysis of Vivaldi antenna with enhanced radiation characteristics for mm-wave and THz 
+applications. Opt Quant Electron. 2019;51(9):309. https://​doi.​org/​10.​1007/​s11082-​019-​2032-4.
+	38.	 Emara MK, Stuhec-Leonard SK, Tomura T, Hirokawa J, Gupta S. Laser-drilled all-dielectric huygens’ transmit-arrays as 120 GHz band 
+beamformers. IEEE Access. 2020;8:153815–25. https://​doi.​org/​10.​1109/​ACCESS.​2020.​30182​97.
+	39.	 Lamminen A, Säily J, Ala-Laurinaho J, de Cos J, Ermolov V. Patch antenna and antenna array on multilayer high-frequency PCB for D-band. 
+IEEE Open J Antennas Propag. 2020;1:396–403. https://​doi.​org/​10.​1109/​OJAP.​2020.​30045​33.
+
+=== Page 24 ===
+Vol:.(1234567890)
+Perspective	
+ 
+Discover Electronics            (2024) 1:36  
+| https://doi.org/10.1007/s44291-024-00041-y
+	40.	 Wu GB, Zeng Y-S, Chan KF, Qu S-W, Chan CH. High-gain circularly polarized lens antenna for terahertz applications. IEEE Antennas Wirel 
+Propag Lett. 2019;18(5):921–5. https://​doi.​org/​10.​1109/​LAWP.​2019.​29058​72.
+	41.	 Kumar R, Gupta SK, Wang H-C, Kumari CS, Sai Srinivas Vara Prasad Korlam. From efficiency to sustainability: exploring the potential of 6G 
+for a greener future. Sustainability. 2023;15(23):16387. https://​doi.​org/​10.​3390/​su152​316387.
+	42.	 Thornton J, Huang K. Modern lens antennas for communications engineering. Hoboken: Wiley; 2013.
+	43.	 Kamruzzaman MM, Trabelsi Y, Nishat H, et al. The smart enhancement of near field sensing range for terahertz antenna in 6G wireless 
+communication systems. Opt Quant Electron. 2024;56:1452. https://​doi.​org/​10.​1007/​s11082-​024-​06898-3.
+	44.	 Shi E, et al. RIS-aided cell-free massive MIMO systems for 6G: fundamentals, system design, and applications. Proc IEEE. 2024;112(4):331–64. 
+https://​doi.​org/​10.​1109/​JPROC.​2024.​34044​91.
+	45.	 Xu F, Yao J, Lai W, Shen K, Li X, Chen X, Luo ZQ. Coordinating multiple intelligent reflecting surfaces without channel information. IEEE 
+Trans Signal Process. 2024;72:31–46. https://​doi.​org/​10.​1109/​TSP.​2023.​33348​18.
+	46.	 “Antenna theory: analysis and design” by Contantine A. Balanis, ­3rd edition. Wiley-Interscience: New York.
+	47.	 Li B, Dupleich D, Xia G, Zhou H, Zhang Y, Xiao P, Yang L-L. MDD-enabled two-tier terahertz fronthaul in indoor industrial cell-free massive 
+MIMO. IEEE Trans Commun. 2024;72(3):1653–1670. https://​doi.​org/​10.​1109/​TCOMM.​2023.​33308​93.
+	48.	 Chen Y, Han C, Yu Z, Wang G. Channel measurement, characterization and modeling for terahertz indoor communications above 200 
+GHz. IEEE Trans Wireless Commun. 2024. https://​doi.​org/​10.​1109/​twc.​2023.​33332​22.
+	49.	 Zheng Y, Wang CX, Yang R, Yu L, Lai F, Huang J, Feng R, Wang C, Li C, Zhong Z. Ultra-massive MIMO channel measurements at 5.3 GHz and 
+a general 6G channel model. IEEE Trans Veh Technol. 2023;72(1):20–34. https://​doi.​org/​10.​1109/​TVT.​2022.​32058​96.
+	50.	 Chafii M, Naoumi S, Alami R, Almazrouei E, Bennis M, Debbah M. Emergent communication in multi-agent reinforcement learning for 
+future wireless networks. IEEE Internet Things Mag. 2023;6(4):18–24. https://​doi.​org/​10.​1109/​IOTM.​001.​23001​02.
+Publisher’s Note  Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.

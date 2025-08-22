@@ -1,0 +1,26 @@
+<!-- templates/chatbot.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot with Voice Input</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Chatbot with Voice Input</h1>
+        <div id="chat-box" class="chat-box"></div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Speak or type your message...">
+            <button id="send-btn">Send</button>
+            <button id="record-btn">🎙️ Record</button>
+        </div>
+        <div id="status"></div>
+    </div>
+
+    <!-- Include Socket.IO client library -->
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4/dist/socket.io.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

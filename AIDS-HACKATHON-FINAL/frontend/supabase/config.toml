@@ -1,0 +1,5 @@
+
+project_id = "depvzofgnfswmhtdvdoh"
+
+[functions.process-pdf]
+verify_jwt = true
